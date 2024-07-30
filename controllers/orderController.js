@@ -45,15 +45,6 @@ const placeOrder = async (req, res) => {
       quantity: 1,
     });
 
-    // Create a Paystack payment session
-    // const session = await paystackInstance.checkout.sessions.create({
-    //   line_items: line_items,
-    //   mode: 'payment',
-    //   success_url: `${frontend_url}/verify?success=true&orderId=${newOrder._id}`,
-    //   cancel_url: `${frontend_url}/verify?success=false&orderId=${newOrder._id}`
-    // });
-
-    // Return success response with the session URL
     res.json({ message: "Order placed successfully", success: true });
   } catch (error) {
     console.error(error);
