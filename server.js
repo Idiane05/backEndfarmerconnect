@@ -3,7 +3,7 @@ import cors from 'cors';
 import { connectDB } from '../backend/config/db.js';
 import foodRouter from './routes/foodRoute.js';
 import userRouter from './routes/userRoute.js';
-import 'dotenv/config';
+// import 'dotenv/config';
 import cartRouter from './routes/cartRoute.js';
 import contactRouter from './routes/ContactRoute.js';
 import orderRouter from './routes/orderRoute.js';
