@@ -1,13 +1,8 @@
 import orderModel from "../models/orderModel.js";
 import userModel from ".././models/userMode.js";
-// import paystack from 'paystack-api'
-// Place order controller
-// Initialize Paystack with your secret key
-// const paystackInstance = paystack(process.env.PAYSTACK_SECRET_KEY);
 
 // Place order controller
 const placeOrder = async (req, res) => {
-  //   const frontend_url = "http://localhost:5173";
 
   try {
     const { userId, items, address, amount } = req.body;
